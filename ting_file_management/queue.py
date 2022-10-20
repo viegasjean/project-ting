@@ -22,3 +22,14 @@ class Queue:
             return self._data[index]
         else:
             raise IndexError()
+
+    def clear(self):
+        if self.is_empty():
+            print('Não há elementos')
+            return None
+        self._data.clear()
+        print('')
+
+    def get_all(self):
+        return list(self._data)
+
