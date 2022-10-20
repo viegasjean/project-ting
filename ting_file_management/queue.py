@@ -23,6 +23,9 @@ class Queue:
         else:
             raise IndexError()
 
+    def search_word(word):
+        filter(function, iterable)
+
     def clear(self):
         if self.is_empty():
             print('Não há elementos')
@@ -32,4 +35,3 @@ class Queue:
 
     def get_all(self):
         return list(self._data)
-
