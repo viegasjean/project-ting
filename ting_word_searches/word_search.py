@@ -8,12 +8,13 @@ def exists_word(word, instance):
         in enumerate(lista)
         if word.lower()
         in text.lower()]
-
-    return [{
-        'arquivo': arquivo,
-        'palavra': word,
-        'ocorrencias': ocorrencias
-    }]
+    if ocorrencias:
+        return [{
+            'arquivo': arquivo,
+            'palavra': word,
+            'ocorrencias': ocorrencias
+        }]
+    return []
 
 
 def search_by_word(word, instance):
